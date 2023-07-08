@@ -7,33 +7,33 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test
-    void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
+  @Test
+  void appHasAGreeting() {
+    App classUnderTest = new App();
+    assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+  }
 
-    @Test
-    public void testAppReternHelloWorld() {
-        App classUnderTest = new App();
-        assertEquals("Hello World!", classUnderTest.getGreeting());
-    }
+  @Test
+  public void testAppReternHelloWorld() {
+    App classUnderTest = new App();
+    assertEquals("Hello World!", classUnderTest.getGreeting());
+  }
 
-    @Test
-    public void testAppReternSumAndAve() {
-        App classUnderTest = new App();
-        assertEquals("Sum of 2 and 3 is 5. Average is 2.5.", classUnderTest.printSumAndAve(2, 3));
-    }
+  @Test
+  public void testAppReternSumAndAve() {
+    App classUnderTest = new App();
+    assertEquals("Sum of 2 and 3 is 5. Average is 2.5.", classUnderTest.printSumAndAve(2, 3));
+  }
 
-    @Test
-    public void testAppReternSumAndAveInRange() {
-        App classUnderTest = new App();
-        assertEquals("Sum of 1 to 10 is 55. Average is 5.5.", classUnderTest.printSumAndAveInRange(1, 10));
-    }
+  @Test
+  public void testAppReternSumAndAveInRange() {
+    App classUnderTest = new App();
+    assertEquals("Sum of 1 to 10 is 55. Average is 5.5.", classUnderTest.printSumAndAveInRange(1, 10));
+  }
 
-    @Test
-    public void testAppReternSumOfOddAndEven() {
-        App classUnderTest = new App();
-        assertEquals("Sum of odd of 1 to 10 is 25. Sum of even is 30.", classUnderTest.printSumOfOddAndEven(1, 10));
-    }
+  @Test
+  public void testAppReternSumOfOddAndEven() {
+    App classUnderTest = new App();
+    assertEquals("Sum of odd of 1 to 10 is 25. Sum of even is 30.", classUnderTest.printSumOfOddAndEven(1, 10));
+  }
 }
